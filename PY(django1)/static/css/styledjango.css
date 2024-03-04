@@ -1,0 +1,53 @@
+.nav-item{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.nav-item .nav-link{
+    display: flex;
+    position: relative;
+}
+.navbar .nav-link li{
+    list-style: none;
+    margin: 0 22px;
+}
+.navbar .nav-link a:hover{
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration: red;
+}
+.button{
+     padding: 34px;
+    text-align: center;
+}
+.button button{
+    color:white;
+    background-color:transparent;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 20px;
+}
+.button button:hover{
+     color: black;
+     background-color: dimgrey;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 70vh;
+}
+class Employees:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+class Receptionist(Employees):
+    def __init__(self, name, salary, gender):
+    super().__init__(name, salary)
+    self.gender = gender
+class Front_end:
+    def __int__(self,JAVA,CSS,HTML):
+
+obj1 = Receptionist('Susan Smith', 150000, 'Female')
+obj2 = Employees('Trevor Kimani', 150000)
